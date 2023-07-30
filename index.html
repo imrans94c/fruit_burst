@@ -28,8 +28,8 @@
       }
     </script>
 
-<body class="container px-4 md:px-8 lg:px-16">
-    <header>
+<body>
+    <header class="container px-4 md:px-8 lg:px-16">
         <div class="grid grid-cols-2 my-4 bg-white navbar mx-auto px-0 md:px-8 lg:px-16 lg:bg-[#F85559]          lg:grid-cols-3 rounded-full">
                 
                 <div class="hidden flex-row lg:flex items-center justify-center gap-5 text-[#FFF] text-lg font-medium">
@@ -46,7 +46,7 @@
                 <div class="flex justify-end">
                     <input class="hidden lg:flex items-center justify-center w-80 h-12 rounded-full rounded-r-none bg-[#FFF] text-base px-5 border-none" type="text" placeholder="Search here" name="search">
                     <button class="hidden lg:flex items-center justify-center text-2xl h-12 w-16 rounded-full rounded-l-none bg-[#FFF]" type="submit"><i class="fa fa-search"></i></button>
-                    <div class="flex dropdown justify-end items-center lg:hidden">
+                    <div class="flex dropdown dropdown-end justify-end items-start lg:hidden">
                         <label tabindex="0" class="btn btn-ghost btn-circle">
                         <i class="fa-solid fa-bars text-3xl"></i>
                         </label>
@@ -61,9 +61,9 @@
         </div>
         <!-- Banner Section -->
         <section>
-                <div class="carousel w-full mb-24">
+                <div class="carousel w-full mb-0 lg:mb-24">
                     <div id="slide1" class="carousel-item relative w-full ">
-                         <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg1 text-center rounded-md">
+                         <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg1 rounded-md absolute text-center transform -translate-x-1/2 -translate-y-1/2 border top-1/2 left-1/2">
                             <h1 class="mb-72 text-[#FFF] text-3xl font-bold lg:text-5xl ">Exotic tastes at your<br> doorstep</h1>
                             <p class="-mt-32 text-[#FFF] lg:text-xl">We supply highly quality organic products</p>
                             <button class="btn text-[#FFF] bg-[#F85559] border-none normal-case text-xl mb-0">Shop Now</button>
@@ -114,8 +114,8 @@
 
                 <!-- fruit-top -->
 
-               <div class="relative lg:md:w-full lg:w-9/12 mx-auto">
-                <div class="h-96 lg:h-64 bg-[#FFF] rounded-lg shadow-md px-5 py-2
+               <div class="hidden relative md:block lg:md:w-full lg:w-9/12 mx-auto">
+                <div class="h-auto lg:h-64 bg-[#FFF] rounded-lg shadow-md px-5 py-2
                 absolute inset-x-0 bottom-0">
                    <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 justify-center items-center">
                        <div class="text-center">
@@ -156,9 +156,9 @@
 
     </header>
 
-    <main>
+    <main class="container px-4 md:px-8 lg:px-16">
          <!-- Deal of the day -->
-        <section class="deal-section bg-[#FFFFFF] my-8 py-8">
+        <section class="deal-section bg-[#FFFFFF] mt-8 pt-8">
             <div class="text-date flex-col-2 lg:flex justify-end">
                 <div class="section-text flex-1">
                     <h1 class=" text-center text-3xl md:text-3xl  lg:text-5xl lg:text-start font-extrabold">Deal of the day</h1>
@@ -383,8 +383,8 @@
 
                     </div>
                     <div class="flex flex-col justify-center items-center mt-20">                    
-                        <img class="text-center" src="./assets/images/member1.png" alt="">
-                        <h1 class="text-[#FFF] mt-5">Awlad Hossain</h1>
+                        <img class="text-center" src="./assets/images/member2.png" alt="">
+                        <h1 class="text-[#FFF] mt-5">Safia Chowdhury</h1>
                         <p class="text-[#FFF]">Fruits Expert</p>
                         <p class="text-2xl text-center mt-5">
                             <i class="fa-brands fa-facebook-f text-[#FFF] bg-[#F85559] w-8 h-8 rounded-full  pt-1"></i>
@@ -394,8 +394,8 @@
 
                     </div>
                     <div class="flex flex-col justify-center items-center mt-20">                    
-                        <img class="text-center" src="./assets/images/member1.png" alt="">
-                        <h1 class="text-[#FFF] mt-5">Awlad Hossain</h1>
+                        <img class="text-center" src="./assets/images/member3.png" alt="">
+                        <h1 class="text-[#FFF] mt-5">Safia Chowdhury</h1>
                         <p class="text-[#FFF]">Fruits Expert</p>
                         <p class="text-2xl text-center mt-5">
                             <i class="fa-brands fa-facebook-f text-[#FFF] bg-[#F85559] w-8 h-8 rounded-full  pt-1"></i>
@@ -405,8 +405,8 @@
 
                     </div>
                      <div class="flex flex-col justify-center items-center mt-20">                    
-                        <img class="text-center" src="./assets/images/member1.png" alt="">
-                        <h1 class="text-[#FFF] mt-5">Awlad Hossain</h1>
+                        <img class="text-center" src="./assets/images/member4.png" alt="">
+                        <h1 class="text-[#FFF] mt-5">Chaity</h1>
                         <p class="text-[#FFF]">Fruits Expert</p>
                         <p class="text-2xl text-center mt-5">
                             <i class="fa-brands fa-facebook-f text-[#FFF] bg-[#F85559] w-8 h-8 rounded-full  pt-1"></i>
@@ -432,10 +432,12 @@
 
             <div class="choose-content  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Left-side -->
-                    <div>
-                        <div class="flex-col-1 text-center md:flex lg:flex lg:justify-left items-center gap-5 mt-10 ">
-                            <div class="flex w-12 h-12 bg-[#d9d9d7] rounded-full items-center justify-center">
-                            <p> <i class="fa-solid fa-user-group text-2xl"></i></p>
+                    <div class="order-2 md:order-none ">
+                        <div class="flex-col-1 justify-center items-center text-center mx-auto md:flex lg:flex lg:justify-left lg:text-left lg:items-center gap-5 mt-10 ">
+                            <div class="flex items-center justify-center">
+                                <div class="flex w-12 h-12 bg-[#d9d9d7] rounded-full items-center justify-center">
+                                    <p> <i class="fa-solid fa-user-group text-2xl"></i></p>
+                                    </div>
                             </div>
 
                             <div>
@@ -445,10 +447,13 @@
                             </div>
 
                         </div>
-                        <div class="flex-col-1 text-center md:flex lg:flex lg:justify-left items-center gap-5 mt-10 ">
-                            <div class="flex w-12 h-12 bg-[#d9d9d7] rounded-full items-center justify-center">
-                            <p> <i class="fa-regular fa-heart text-2xl"></i></p>
+                        <div class="flex-col-1 text-center md:flex lg:flex lg:justify-left lg:text-left items-center gap-5 mt-10 ">
+                            <div class="flex items-center justify-center">
+                                <div class="flex w-12 h-12 bg-[#d9d9d7] rounded-full items-center justify-center">
+                                <p> <i class="fa-regular fa-heart text-2xl"></i></p>
+                                </div>
                             </div>
+
 
                             <div>
                                 <h1 class="text-[#121212] text-2xl font-extrabold">Fresh is Best</h1>
@@ -457,9 +462,11 @@
                             </div>
 
                         </div>
-                        <div class="flex-col-1 text-center md:flex lg:flex lg:justify-left items-center gap-5 mt-10 ">
-                            <div class="flex w-12 h-12 bg-[#d9d9d7] rounded-full items-center justify-center">
-                            <p> <i class="fa-solid fa-gift text-2xl"></i></p>
+                        <div class="flex-col-1 text-center md:flex lg:flex lg:justify-left lg:text-left items-center gap-5 mt-10 ">
+                            <div class="flex items-center justify-center">
+                                <div class="flex w-12 h-12 bg-[#d9d9d7] rounded-full items-center justify-center">
+                                <p> <i class="fa-solid fa-gift text-2xl"></i></p>
+                                </div>
                             </div>
 
                             <div>
@@ -473,13 +480,13 @@
                     </div>
 
                 <!-- Middle-side -->
-                    <div class="flex justify-center items-center gap-5 mt-10 ">
+                    <div class="flex justify-center object-center object-contain gap-10 mt-10 order-1 md:order-none">
                         <img src="./assets/images/whychoose1.png" alt="">
                     </div>
 
                 <!-- Right-side -->
-                <div>
-                    <div class="flex-col-1 text-center md:flex lg:flex lg:justify-left items-center gap-5 mt-10">
+                <div class="order-3 md:order-none">
+                    <div class="flex flex-col-reverse text-center md:flex lg:flex-row lg:justify-left items-center gap-5 mt-10">
                     
                         <div class="text-center lg:text-right">
                             <h1 class="text-[#121212] text-2xl font-extrabold">Integrated Supplier</h1>
@@ -491,7 +498,7 @@
                          </div>
     
                     </div>
-                    <div class="flex-col-1 text-center md:flex lg:flex lg:justify-left items-center gap-5 mt-10  ">
+                    <div class="flex flex-col-reverse text-center md:flex lg:flex-row lg:justify-left items-center gap-5 mt-10  ">
                     
                         <div class="text-center lg:text-right">
                             <h1 class="text-[#121212] text-2xl font-extrabold">Sustainable Practice</h1>
@@ -502,7 +509,7 @@
                             <p><i class="fa-solid fa-ice-cream text-2xl"></i></p>
                          </div>
                     </div>
-                    <div class="flex-col-1 text-center md:flex lg:flex lg:justify-left items-center gap-5 mt-10 ">
+                    <div class="flex flex-col-reverse text-center lg:flex-row lg:justify-left items-center gap-5 mt-10 ">
                     
                         <div class="text-center lg:text-right">
                             <h1 class="text-[#121212] text-2xl font-extrabold">The Benefits Only</h1>
@@ -531,7 +538,7 @@
                     <h2 class="text-3xl font-bold text-[#FFF]">Fruit Burst</h2>
                 </div>
             
-                <div class="flex justify-center items-center gap-20">
+                <div class="flex flex-wrap gap-12 px-1 justify-center md:flex md:justify-center md:items-center md:gap-20">
                     <a class="text-[#FFF] text-2xl"  href="">Home</a>
                     <a class="text-[#FFF] text-2xl"  href="">About Us</a>
                     <a class="text-[#FFF] text-2xl"  href="">Shop</a>
@@ -540,7 +547,7 @@
                     <a class="text-[#FFF] text-2xl"  href="">My Account</a>
                 </div>
             
-                <div class="flex justify-center items-center gap-20 pt-16 pb-24">
+                <div class="flex flex-wrap justify-center gap-12 md:justify-center md:items-center md:gap-20 pt-16 pb-24">
                     <a href=""><i class="fa-brands fa-facebook-f text-[#FFF] text-4xl"></i></a>
                     <a href=""><i class="fa-brands fa-snapchat text-[#FFF] text-4xl"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin-in text-[#FFF] text-4xl"></i></a>
